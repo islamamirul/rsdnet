@@ -1,0 +1,16 @@
+train_net: "./models/train_rsdnet.prototxt" 
+
+iter_size: 10
+lr_policy: "poly"
+power: 0.9
+base_lr: 2.5e-11
+
+average_loss: 20
+display: 20
+max_iter: 20000
+momentum: 0.9
+weight_decay: 0.0005
+snapshot: 5000
+
+snapshot_prefix: "./models/trained_weights/rsdnet" 
+solver_mode: GPU
